@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*,
+*:before,*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+:root {
+--fw-medium: 500;
+--fw-bold: 700;
+--fw-extrabold: 800;
+}
+body {
+    font-family: 'Hanken Grotesk';
+    font-size: 20px;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    font-weight: var(--fw-medium);
+    max-width: 320px;
+    margin: 0 auto;
+}
+.main-score {
+    background-image: linear-gradient(hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%));
+   text-align: center;
+   line-height: 3rem;
+   color: var(--Light-lavender);
+   padding: .85rem 2.5rem .85rem 2.5rem ;
+   border-bottom-left-radius: 1.5rem;
+   border-bottom-right-radius: 1.5rem;
+}
+.main-score heading {
+    font-size: 17px;
+    color:  hsl(241, 100%, 89%);
+    font-size: 15px;
+}
+.circle {
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0));
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.circle h1 {
+    font-size: 3rem;
+    color: white;
+}
+.circle p {
+    font-size: 14px;
+    word-spacing: .1rem;
+    opacity: .5;
+    line-height: 1.75rem;
+    color: hsl(241, 100%, 89%);
+}
+.main-score h4 {
+    color: white;
+    font-size: 18px
+}
+#main-content {
+    line-height: 1.5rem;
+    color: hsl(241, 100%, 89%);
+    font-weight: 400;
+    font-size: 13px;
+}
+@media (min-width: 600px) {
+    .result {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-score {
+        width: 250px;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+    }
+}
+.summarize {
+    padding: 1.5rem;
+    font-weight: 700;
+    font-size: 14px;
+}
+.summarize h5 {
+    line-height: 2.3rem;
+    font-size: 1.1rem;
+    display: block;
+    padding-bottom: .85rem;
+    opacity: .8;
+}
+.reaction {
+    background-color: hsla(0, 100%, 67%, .07);
+    padding: .65rem;
+    display: flex;
+    color: hsl(0, 100%, 67%);
+    border-radius: 5px;
+    margin-bottom: .85rem;
+}
+.img-1 {
+    padding-right: 1rem;
+    height: 1rem;
+}
+.number {
+    display: block;
+    padding-left: 6rem;
+    color: black;
+}
+.number span {
+    opacity: .5;
+}
+.memory {
+    padding: .65rem;
+    display: flex;
+    border-radius: 5px;
+    background-color: hsla(39, 100%, 56%, .09);
+    color: hsl(39, 100%, 56%);
+    margin-bottom: .85rem;
+}
+.img-2 {
+    padding-right: 1rem;
+    height: 1rem;
+}
+.number-2 {
+    display: block;
+    padding-left: 6.3rem;
+    color: black;
+}
+.number-2 span {
+    opacity: .5;
+}
+.verbal {
+    padding: .65rem;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: .85rem;
+    background-color: hsla(166, 100%, 37%, .1);
+    color: hsl(166, 100%, 37%);
+}
+.img-3 {
+    padding-right: 1rem;
+    height: 1rem;
+}
+.number-3 {
+    display: block;
+    padding-left: 7rem;
+    color: black;
+}
+.number-3 span {
+    opacity: .5;
+}
+.visual {
+    padding: .65rem;
+    display: flex;
+    border-radius: 5px;
+    color: hsl(252, 100%, 67%);
+    background-color: hsla(252, 100%, 67%, .09);
+}
+.img-4 {
+    padding-right: 1rem;
+    height: 1rem;
+}
+.number-4 {
+    display: block;
+    padding-left: 7rem;
+    color: black;
+}
+.number-4 span {
+    opacity: .5;
+}
+@media (min-width: 600px) {
+    .reaction, .verbal, .visual, .memory {
+        width: 250px;
+     }
+    .number {
+        padding-left: 5rem;
+    }
+    .number-2 {
+        padding-left: 5rem;
+    }
+    .number-3 {
+        padding-left: 5.7rem;
+    }
+    .number-4 {
+        padding-left: 5.9rem;
+    }
+    .summarize {
+       box-shadow: 10px 10px 10px rgb(145, 142, 142);
+       border-top-right-radius: 1.5rem;
+       border-bottom-right-radius: 1.5rem;
+    }
+}
+.button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 15px;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    display: block;
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+}
+.button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%));
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
